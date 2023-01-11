@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+    <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/7ff041b1fa.js" crossorigin="anonymous"></script>
+    <title>Theatre Company Featured Shows Project</title>
+</head>
+<body>
+    <!-- Navbar -->
+    
+    <nav class="imaging">
+        <div class="nav-container ">
+            <div class="both-nav-boxes text-xl-center ">
+                <div class="navbar-brand mr-0 pt-5"><h2 class="page-title">Chicago Art Museum API</h2>
+                </div>
+                <div class="navbar-list">
+                    <ul class="list-style align-content-center row-lg-12 col-md-6 ">
+                        <li class="nav-link ">
+                                <a class="main-links" href="#"><h4 class="fs-3 fw-bold">About Us</h4></a>
+                        </li>
+                        <li class="nav-link">
+                                <a class="main-links" href="#"><h4 class="fs-3 fw-bold">Contact Us</h4></a>
+                        </li>
+                        <li class="nav-link">
+                                <a class="main-links" href="#"><h4 class="fs-3 fw-bold">Events</h4></a>
+                        </li>
+                        <li class="nav-link">
+                                <a class="main-links" href="#"><h4 class="fs-3 fw-bold">Buy Tickets</h4></a>
+                        </li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </nav>
+
+    <!-- Main Page -->
+    <section class="landing-page-background">
+        <div class="size-iamge">
+            <img class="img-fluid p-lg-0 ml-0 p-0 img1" src="/JS_Project/statics/Background_Picture/architecture-about-building-modern-158571.jpeg"  alt="tents camping at night">
+        </div>
+    </section>
+
+    <!-- Flyer Tiles -->
+
+    <section class="collage">
+        <div class="container">
+           <div class="gallery"> 
+                <div class="image gallery__item--1 image">
+                    <img class="image__img gallery__img" src="/JS_Project/statics/Artists_paintings/1933.1153 - The Artist's House at Argenteuil.jpg" alt="16554">
+                    <div class="image__overlay image__overlay--primary " id="fig1" onclick="event.stopPropagation(); getPic(this.id, event, 'title', 'artist_display', 'date_display', 'style_title')"> 
+                        <div class="image__title"></div>
+                        <p class="image__description">
+                            <h3 id="title"></h3>
+                            <h3 id="artist_display"></h3>
+                            <h3 id="date_display"></h3>
+                            <h3 id="style_title"></h3>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="image gallery__item--2 image">
+                    <img class="image__img gallery__img" src="/JS_Project/statics/Artists_paintings/the_red_arm_chair.jpeg" alt="5357">
+                    <div class="image__overlay image__overlay--primary " id="fig2" onclick="event.stopPropagation(); getPic(this.id, event, 'title2',  'artist_display2', 'date_display2', 'style_title2')"> 
+                        <div class="image__title"></div>
+                        <p class="image__description">
+                            <h3 id="title2"></h3>
+                            <h3 id="artist_display2"></h3>
+                            <h3 id="date_display2"></h3>
+                            <h3 id="style_title2"></h3>
+                        </p>
+                    </div>
+                </div> 
+
+                <div class="image gallery__item--3 image">
+                    <img class="image__img gallery__img" src="/JS_Project/statics/Artists_paintings/Inventions_of_the_Monsters.jpg" alt="151424">
+                    <div class="image__overlay image__overlay--primary " id="fig3" onclick="event.stopPropagation(); getPic(this.id, event, 'title3',  'artist_display3', 'date_display3', 'style_title3')"> 
+                        <div class="image__title"></div>
+                        <p class="image__description">
+                            <h3 id="title3"></h3>
+                            <h3 id="artist_display3"></h3>
+                            <h3 id="date_display3"></h3>
+                            <h3 id="style_title3"></h3>
+                        </p>
+                    </div>
+                </div> 
+
+                <div class="image gallery__item--4 image">
+                    <img class="image__img gallery__img" src="/JS_Project/statics/Artists_paintings/1926.417 - The Bedroom.jpg" alt="28560">
+                    <div class="image__overlay image__overlay--primary " id="fig4" onclick="event.stopPropagation(); getPic(this.id, event, 'title4',  'artist_display4', 'date_display4', 'style_title4')"> 
+                        <div class="image__title"></div>
+                        <p class="image__description">
+                            <h3 id="title4"></h3>
+                            <h3 id="artist_display4"></h3>
+                            <h3 id="date_display4"></h3>
+                            <h3 id="style_title4"></h3>
+                        </p>
+                    </div>
+                </div> 
+
+                <div class="image gallery__item--5 image">
+                    <img class="image__img gallery__img" src="/JS_Project/statics/Artists_paintings/American_Gothic.jpg" alt="6565">
+                    <div class="image__overlay image__overlay--primary " id="fig5" onclick="event.stopPropagation(); getPic(this.id, event, 'title5',  'artist_display5', 'date_display5', 'style_title5')"> 
+                        <div class="image__title"></div>
+                        <p class="image__description">
+                            <h3 id="title5"></h3>
+                            <h3 id="artist_display5"></h3>
+                            <h3 id="date_display5"></h3>
+                            <h3 id="style_title5"></h3>
+                        </p>
+                    </div>
+                </div> 
+
+           </div>
+       </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div id="gradient"> </div>
+        <div class="map column">
+            <img src="/JS_Project/statics/Footer/chicago map screenshot.png" alt="" class="location-map">
+        </div>
+        <div class="footer-all-info column">
+            <div class="footer-info">
+                <div class="info-header">Info</div>
+                <div class="footer-location">
+                    <p class="icon"><i class="fa-solid fa-location-dot fa-xl" style="color: orange"></i> Chicago, IL 60611 United States</p>
+                </div>
+                <div class="footer-email">
+                    <p class="icon"><i class="fa-solid fa-envelope fa-xl icon-styling" style="color: orange"></i> example@example.com</p>
+                </div>
+                <div class="footer-phone-num">
+                    <p class="icon"><i class="fa-solid fa-mobile-retro fa-xl icon-styling" style="color: orange"></i> Call Us 708-565-4400</p>
+                </div>
+            </div>
+        </div>
+        <div class="socials column">
+            <div class="info-header">Social</div>
+            <div class="one-social">
+                <a href="#"><p class="icon"><i class="fa-brands fa-facebook fa-xl icon-styling" style="color: blue"></i> Facebook</p></a>
+            </div>
+            <div class="one-social">
+                <a href="#"><p class="icon"><i class="fa-brands fa-instagram fa-xl" style="color: darkorange"></i> Instagram</p></a>
+            </div>
+            <div class="one-social">
+                <a href="#"><p class="icon"><i class="fa-brands fa-youtube fa-xl" style="color: red"></i> YouTube</p></a>
+            </div>
+            <div class="one-social">
+                <a href="#"><p class="icon"></p><i class="fa-brands fa-twitter fa-xl" style="color: rgb(16, 109, 140)"></i> Twitter</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
