@@ -28,7 +28,7 @@ nav {
     z-index: 3;
     height: 200px;
     top: 0px;
-    background-image: url(../statics/Background_Picture/the-bean-park-panorama-kevin-eatinger.jpg);
+    background-image: url(statics/Background_Picture/the-bean-park-panorama-kevin-eatinger.jpg);
 }
 
 .imaging {
